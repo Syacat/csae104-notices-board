@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: system-ui, sans-serif;
+    background: linear-gradient(135deg, #d5d6e8, #e8c7f3);
+}
+
+.card {
+    background: white;
+    padding: 28px 36px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+    text-align: center;
+}
+
+button {
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 8px;
+    background: #159bc7;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #087da5;
+}   
