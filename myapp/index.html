@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="themeToggle" class="theme" type="button">Dark</button>
+
+  <section id="splash" class="screen">
+    <h1 class="logo">MyApp</h1>
+    <div class="loader" aria-label="Loading"></div>
+  </section>
+
+  <section id="register" class="screen hidden">
+    <form id="regForm" class="card">
+      <h2>Create account</h2>
+      <input name="name" placeholder="Name" autocomplete="name" required>
+      <input name="email" type="email" placeholder="Email" autocomplete="email" required>
+      <input name="password" type="password" placeholder="Password" autocomplete="new-password" required>
+      <input name="confirm" type="password" placeholder="Confirm password" autocomplete="new-password" required>
+      <button type="submit">Register</button>
+      <p id="regMsg" class="message" role="alert"></p>
+      <a href="#" id="toLogin">I have an account</a>
+    </form>
+  </section>
+
+  <section id="login" class="screen hidden">
+    <form id="logForm" class="card">
+      <h2>Log in</h2>
+      <input name="email" type="email" placeholder="Email" autocomplete="email" required>
+      <input name="password" type="password" placeholder="Password" autocomplete="current-password" required>
+      <button type="submit">Log in</button>
+      <p id="logMsg" class="message" role="alert"></p>
+      <a href="#" id="toRegister">Create an account</a>
+    </form>
+  </section>
+
+  <section id="welcome" class="screen hidden">
+    <div class="card welcome-card">
+      <h2 id="welcomeText"></h2>
+      <p>You have successfully logged in.</p>
+      <button id="logout" type="button">Log out</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

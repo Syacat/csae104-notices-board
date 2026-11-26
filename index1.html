@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CSAE-104 PROGRESS</title>
+ 
+  <link rel="stylesheet" href="styles.css">
+
+
+  <style>
+    :root {
+      --bg: #071426;
+      --panel: rgba(13, 32, 56, .94);
+      --line: rgba(93, 190, 255, .25);
+      --text: #eaf6ff;
+      --muted: #a9c2d8;
+      --cyan: #21d4fd;
+      --blue: #287bff;
+      --violet: #7657ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { min-height: 100%; background: var(--bg); }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 32px 20px;
+      color: var(--text);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(33,212,253,.16), transparent 30%),
+        radial-gradient(circle at 88% 18%, rgba(118,87,255,.17), transparent 32%),
+        linear-gradient(145deg, #06101f 0%, #0a1d33 52%, #071426 100%);
+    }
+
+    header, main {
+      width: min(1000px, 100%);
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(0,0,0,.28);
+    }
+
+    header {
+      min-height: 104px;
+      margin-bottom: 20px;
+      padding: 22px 28px;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(105deg, rgba(19,75,121,.97), rgba(19,42,82,.97) 58%, rgba(49,39,105,.95));
+      border-color: rgba(33,212,253,.38);
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--text);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    main {
+      min-height: 300px;
+      padding: 30px;
+      background: linear-gradient(145deg, rgba(16,43,73,.94), rgba(9,27,48,.96));
+    }
+
+    main h2 {
+      margin: 0 0 22px;
+      color: #7ee8ff;
+      letter-spacing: .02em;
+    }
+
+    main ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 14px;
+    }
+
+    main li {
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: linear-gradient(120deg, rgba(33,212,253,.08), rgba(40,123,255,.06));
+    }
+
+    main a {
+      color: var(--muted);
+      font-weight: 600;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+
+    main a:hover, main a:focus-visible {
+      color: #fff;
+      text-decoration: underline;
+      text-decoration-color: var(--cyan);
+      outline: none;
+    }
+
+    @media (max-width: 620px) {
+      body { padding: 16px 12px; }
+      header { min-height: 88px; padding: 18px 20px; }
+      main { padding: 22px 20px; }
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>Web Programming</h1>
+  </header>
+
+  <main>
+    <h2>Submissions:</h2>
+    
+    <ul>
+        <li><a href="C:\Web Programming\WEEK 1\week1.html">Week 1</a></li>
+        <li><a href="C:\Web Programming\WEEK 2\login.html">Week 2</a></li>
+    </ul>
+  </main>
+
+</body>
+</html>

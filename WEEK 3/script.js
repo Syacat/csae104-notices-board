@@ -1,22 +1,35 @@
-var count = 0;
+let blue = document.getElementById("blue");
+let red = document.getElementById("red");
+let yellow = document.getElementById("yellow");
 
-var btn = document.getElementById("btn");
-let btn1 = document.getElementById("btn1");
-let btn2 = document.getElementById("btn2");
+let colorMessage = document.getElementById("colorMessage");
 
-btn.addEventListener("click", function () {
-    count++;
+// Blue Background
+blue.addEventListener("click", function () {
+    document.body.style.background = "blue";
 
-    btn.textContent = "Clicked " + count +
-        (count === 1 ? " time" : " times");
+    colorMessage.textContent = "You Choose Blue!";
+    colorMessage.style.color = "white";
 
-    console.log("count is now", count);
+    alert("Background color changed to Blue!");
 });
 
-btn1.addEventListener("click", function () {
-    alert("Hello, World!");
-});
-
-btn2.addEventListener("click", function () {
+// Red Background
+red.addEventListener("click", function () {
     document.body.style.background = "red";
+
+    colorMessage.textContent = "You Choose Red!";
+    colorMessage.style.color = "white";
+
+    alert("Background color changed to Red!");
+});
+
+// Yellow Background
+yellow.addEventListener("click", function () {
+    document.body.style.background = "yellow";
+
+    colorMessage.textContent = "You Choose Yellow!";
+    colorMessage.style.color = "black";
+
+    alert("Background color changed to Yellow!");
 });
